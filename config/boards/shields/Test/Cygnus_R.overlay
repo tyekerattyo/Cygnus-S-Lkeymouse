@@ -1,4 +1,4 @@
-#include "KeyballBLE.dtsi"
+#include "Cygnus.dtsi"
 
 &default_transform {
     col-offset = <6>;
