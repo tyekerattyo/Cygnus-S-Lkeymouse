@@ -57,10 +57,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R       &kp T                                                                          &kp Y      &kp U  &kp I      &kp O       &kp P
-&kp A      &kp S         &kp D         &kp F       &kp G                   &lt_to_layer_0 6 A                      &kp MINUS      &kp H      &kp J  &kp K      &kp L       &lt 4 A
-&kp Z      &kp X         &kp C         &kp V       &kp B                   &mkp LCLK                               &kp TAB        &kp N      &kp M  &kp COMMA  &kp PERIOD  &lt_to_layer_0 5 A
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LSHIFT  &lt 1 LEFT_PARENTHESIS  &lt_to_layer_0 2 RIGHT_PARENTHESIS      &kp BACKSPACE  &kp SPACE                                &kp DEL
+&kp Q      &kp W         &kp E         &kp R       &kp T                                &kp Y      &kp U  &kp I      &kp O       &kp P
+&kp A      &kp S         &kp D         &kp F       &kp G  &to 6          &kp MINUS      &kp H      &kp J  &kp K      &kp L       &to 4
+&kp Z      &kp X         &kp C         &kp V       &kp B  &kp GRAVE      &kp TAB        &kp N      &kp M  &kp COMMA  &kp PERIOD  &to 5
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LSHIFT  &to 1  &to 2          &kp BACKSPACE  &kp SPACE                                &kp DEL
             >;
 
             sensor-bindings = <&rotate>;
@@ -80,9 +80,9 @@
         NUM {
             bindings = <
 &kp ESCAPE  &kp LEFT_ARROW  &kp UP_ARROW  &trans          &trans                      &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans      &trans          &kp DOWN      &kp RIGHT       &trans  &trans      &trans  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&trans      &trans          &trans        &trans          &trans  &trans      &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&kp LCTRL   &kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_SHIFT  &trans  &trans      &trans  &trans                                                                     &kp PIPE
+&trans      &trans          &kp DOWN      &kp RIGHT       &trans  &trans      &trans  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &trans
+&trans      &trans          &trans        &trans          &trans  &trans      &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &trans
+&kp LCTRL   &kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_SHIFT  &trans  &trans      &trans  &trans                                                                     &trans
             >;
 
             sensor-bindings = <&rotate>;
@@ -101,10 +101,10 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE  &trans          &kp UP_ARROW  &trans     &trans                         &trans     &trans    &mkp MB3  &mkp MB2  &trans
-&trans      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans      &trans     &trans     &mkp MB1  &trans    &trans    &trans
-&trans      &trans          &trans        &trans     &trans  &trans      &trans     &trans     &trans    &trans    &trans    &trans
-&trans      &trans          &trans        &trans     &trans  &trans      &kp LC(C)  &kp LC(V)                                &trans
+&kp ESCAPE  &trans          &kp UP_ARROW  &trans     &trans                        &trans    &trans    &mkp MB3  &mkp MB2  &trans
+&trans      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans      &trans    &trans    &mkp MB1  &trans    &trans    &trans
+&trans      &trans          &trans        &trans     &trans  &trans      &trans    &trans    &trans    &trans    &trans    &trans
+&trans      &trans          &trans        &trans     &trans  &trans      &mkp MB5  &mkp MB4                                &trans
             >;
 
             sensor-bindings = <&rotate>;
